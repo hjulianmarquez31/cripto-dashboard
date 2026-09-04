@@ -1,4 +1,4 @@
-markdown_content = """# 🚀 Real-Time Crypto Tracker & Alert Engine
+🚀 Real-Time Crypto Tracker & Alert Engine
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.100%2B-009688?style=for-the-badge&logo=fastapi&logoColor=white)
