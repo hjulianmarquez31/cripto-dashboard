@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Real-Time Crypto Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="bg-slate-900 text-white min-h-screen p-6 font-sans">
+  <div class="max-w-4xl mx-auto space-y-6">
+    
+    <!-- Header y Estado -->
+    <header class="flex justify-between items-center border-b border-slate-800 pb-4">
+      <div>
+        <h1 class="text-2xl font-bold">Crypto Tracker en Tiempo Real</h1>
+        <p class="text-slate-400 text-sm">Monitoreo con WebSockets de Binance</p>
+      </div>
+      <div id="status" class="flex items-center gap-2 bg-slate-800 px-3 py-1 rounded-full text-xs">
+        <span id="status-dot" class="w-2.5 h-2.5 rounded-full bg-yellow-500 animate-pulse"></span>
+        <span id="status-text">Conectando...</span>
+      </div>
+    </header>
+
+    <!-- Cards de Métricas -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div class="bg-slate-800 p-4 rounded-xl border border-slate-700">
+        <span class="text-xs text-slate-400 uppercase tracking-wider">Par</span>
+        <select id="pair-select" class="w-full mt-1 bg-slate-900 border border-slate-700 rounded p-2 text-sm">
+          <option value="btcusdt">BTC / USDT</option>
+          <option value="ethusdt">ETH / USDT</option>
+          <option value="solusdt">SOL / USDT</option>
+        </select>
+      </div>
+
+      <div class="bg-slate-800 p-4 rounded-xl border border-slate-700">
+        <span class="text-xs text-slate-400 uppercase tracking-wider">Precio Actual</span>
+        <div id="price" class="text-2xl font-bold mt-1">--.-- USD</div>
+      </div>
+
+      <div class="bg-slate-800 p-4 rounded-xl border border-slate-700">
+        <span class="text-xs text-slate-400 uppercase tracking-wider">Último Cambio</span>
+        <div id="price-change" class="text-2xl font-bold mt-1 text-slate-400">0.00%</div>
+      </div>
+    </div>
+
+    <!-- Gráfico en Vivo -->
+    <div class="bg-slate-800 p-4 rounded-xl border border-slate-700">
+      <canvas id="cryptoChart" height="120"></canvas>
+    </div>
+
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
