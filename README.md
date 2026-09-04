@@ -65,4 +65,3 @@ cripto-dashboard/
 
 
 
-![Texto alternativo](/home/hector-marquez/Documentos/Portafolio/cripto-dashboard/crypto_trakerinreal_time.png)
