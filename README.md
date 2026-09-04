@@ -62,3 +62,7 @@ cripto-dashboard/
 │   └── app.js               # Cliente WebSocket y lógica de Chart.js
 ├── .gitignore               # Archivos excluidos del control de versiones
 └── README.md                # Documentación del proyecto
+
+
+
+![Texto alternativo](/home/hector-marquez/Documentos/Portafolio/cripto-dashboard/crypto_trakerinreal_time.png)
