@@ -64,4 +64,4 @@ cripto-dashboard/
 └── README.md                # Documentación del proyecto
 
 
-
+![Crypto Dashboard](images/crypto_trakerinreal_time.png)
