@@ -54,14 +54,16 @@ Un dashboard financiero de alto rendimiento diseñado para monitorear precios de
 ```text
 cripto-dashboard/
 ├── backend/
-│   ├── main.py              # Aplicación FastAPI y servidor WebSocket
-│   ├── requirements.txt      # Dependencias del proyecto Python
-│   └── venv/                 # Entorno virtual de Python (ignorado en git)
+│   ├── main.py                # Aplicación FastAPI y servidor WebSocket
+│   ├── requirements.txt       # Dependencias del proyecto Python
+│   └── venv/                  # Entorno virtual de Python (ignorado en git)
 ├── frontend/
-│   ├── index.html           # Interfaz de usuario (Dashboard)
-│   └── app.js               # Cliente WebSocket y lógica de Chart.js
-├── .gitignore               # Archivos excluidos del control de versiones
-└── README.md                # Documentación del proyecto
+│   ├── index.html             # Interfaz de usuario (Dashboard)
+│   └── app.js                 # Cliente WebSocket y lógica de Chart.js
+├── images/                    # Capturas de pantalla
+├── .gitignore                 # Archivos excluidos del control de versiones
+└── README.md                  # Documentación del proyecto
 
+```
 
 ![Crypto Dashboard](images/crypto_trakerinreal_time.png)
